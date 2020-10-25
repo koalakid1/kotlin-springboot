@@ -12,9 +12,8 @@ import org.springframework.web.bind.annotation.RestController
 class TestController {
 
     @RequestMapping("/")
-    fun index(): ResponseEntity<String> {
-        val hello = "hello world"
-        return ResponseEntity.ok().body(hello)
+    fun index(): String {
+        return "index"
     }
 
 }
